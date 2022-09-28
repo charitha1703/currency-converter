@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+   int dollar;
+   string currency;
+   cout<<"CURRENCY CONVERTER"<<endl;
+   //enter the dollar value
+   cout<<"enter the value of the dollar";
+   cin>>dollar;
+   //calculations for conversions
+   double euro=dollar*0.86;
+   double pound=dollar*0.75;
+   double rupees=dollar*75.13;
+   
+   
+   cout<< "enter  INR for converting USD to INR,GBP for USD to GBP,or EUR for USD to EUR"<<endl;
+   cin>>currency;
+   
+   if(currency=="INR")
+   {
+   cout<<dollar<<"dollar in rupees="<<rupees;
+   }
+   else if(currency=="GBP")
+   {
+   cout<<dollar<<"dollar in pounds="<<pound;
+   }
+   else if(currency=="EUR")
+   {
+   cout<<dollar<<"dollar in euros="<<euro;
+   }
+   else
+   {
+   cout<<"it is the invalid input!please try again";
+   }
+   
