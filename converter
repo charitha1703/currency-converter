@@ -17,7 +17,7 @@ int main()
    double rupees=dollar*75.13;
    
    
-   cout<< "enter  INR for converting USD to INR,GBP for USD to GBP,or EUR for USD to EUR"<<endl;
+   cout<< "enter  cuerrency"<<endl;
    cin>>currency;
    
    if(currency=="INR")
